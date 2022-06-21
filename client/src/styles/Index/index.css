@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: none;
+          box-sizing: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,14 @@
+// Import react modules
 import { useState, useEffect } from "react";
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// Import Components
 import Customers from "./components/customers/Customers";
-import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// Import Style
+import "./styles/App/App.css";
 
 function App() {
   const [customers, setCustomers] = useState([]);
@@ -25,12 +32,25 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Customers customers={customers} />
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <div>
+        <Routes>
+          <Route path="/" exact element={<h1>Home page</h1>} />
+          <Route
+            path="/student-info"
+            exact
+            element={
+              <>
+                <Customers customers={customers} />
+              </>
+            }
+          />
+          <Route path="*" element={<h1>404 Page not found</h1>} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 

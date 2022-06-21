@@ -1,0 +1,33 @@
+.table {
+  margin: 2em;
+  padding: 1em;
+
+  .customer-table {
+    border: 5px solid rgb(174, 174, 174);
+    border-radius: 2vw;
+  }
+
+  h2 {
+    background: rgb(47, 47, 47);
+    overflow: hidden;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+  }
+
+  .customer-wrapper {
+    padding: 1em;
+    border-top: 5px solid rgb(174, 174, 174);
+    font-size: 1.5em;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 60em) {
+  .table {
+    margin: 2em 10em;
+  }
+}

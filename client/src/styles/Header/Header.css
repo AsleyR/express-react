@@ -1,0 +1,59 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2f2f2f;
+  padding: 1em 3em;
+  color: white;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+header ul {
+  overflow-y: hidden;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  padding: 1em;
+}
+
+header li a {
+  color: white;
+  font-size: 1.2rem;
+  overflow-y: hidden;
+}
+
+header li a:hover {
+  text-decoration: underline;
+}
+
+header .menu-bar {
+  display: none;
+}
+
+@media (max-width: 38em) {
+  header .menu-bar {
+    display: block;
+    font-size: 1.5rem;
+  }
+  header .link-list {
+    display: none;
+  }
+}
+
+@media (max-width: 38em) {
+  header {
+    padding: 0em 3em;
+  }
+}
+/*# sourceMappingURL=Header.css.map */
